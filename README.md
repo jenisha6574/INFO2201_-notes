@@ -28,13 +28,20 @@ b > c or a> c
 And = In "and" condition both have to be true 
 c>= b and a = b
 
-# If condtion
+### If condtion
 z = 5
 #check if its greater than 0 and print a statemetn
 if (z>0):
     print('x is postive')
- # modulo
+ ### modulo
  = a math operator that gives you the remainder after division.
  
- # elif
+ ### elif
  will run after if statment even 'if ' statment is true or not
+ 
+ 
+ # W2D1
+ ### While loop
+ ### For loop
+ 
+ An iterable is something you can go through one item at a time, usually in a loop.
