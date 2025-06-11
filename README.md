@@ -45,3 +45,49 @@ if (z>0):
  ### For loop
  
  An iterable is something you can go through one item at a time, usually in a loop.
+ 
+ # W2D2
+ 
+ ## Functions:
+ A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.
+ Function ois called using def() keywod. 
+ A parameter is the variable listed inside the parentheses in the function definition.
+ An argument is the value that is sent to the function when it is called.
+ 
+ #### example:
+ def fullname(fname, lname, occupation = 'student')
+    return fname +" "+lname+"is a " + occupation
+    
+    #And whne you call this function 
+ def fullname('Jenisha', 'Shrestha' )
+ /// It will print: Jenisha Shrestha is a Student.
+ /// if you want to change the occupation then we can simply write: def fullname('Jenisha', 'Shrestha', 'Engineer' )
+ /// which will print Jenisha Shrestha is a Engineer. 
+ 
+ ## Scope
+ When you create a function, it has its own little world called a scope.
+
+Any variables you create inside the function stay inside that function.
+
+If you have a variable outside the function with the same name, it will not be affected by the one inside.
+
+### Example:
+ // assign a variable
+var1 = 'Word'
+
+//make a function that has the variable as an argument
+//have it return the mutated variable
+def updated_variable(var1):
+    var1 = var1 + " is cool"
+    return var1
+
+
+
+#print the output of the funciton and the original variable
+print(updated_variable(var1))
+print(var1)
+
+//output:
+Word is cool
+Word
+
