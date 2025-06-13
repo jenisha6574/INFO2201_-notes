@@ -91,3 +91,16 @@ print(var1)
 Word is cool
 Word
 
+## W2D3
+
+### class: Inculdes lots of methos, arrtibutes and function.
+needs to define the variable in the class
+### Ex:
+class personinf0():
+    def name():
+      print(jnjxni):
+    def age():
+    print(xjdxjd)
+    
+ ## Class initialization __ init __ and methods¶
+ 
