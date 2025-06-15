@@ -13,6 +13,8 @@ fltVar = 3.4
 #find out the type of the variable
 type(fltVar)
 
+#### input( ) always prints string so in other to print your input in float number type :   float(input("dcvbhdgbu"))
+
 ### Boolean expressions
 == compariosn
 x!= means not equals to. ex: x!= y meaning x is not equals to y
@@ -39,7 +41,74 @@ if (z>0):
  ### elif
  will run after if statment even 'if ' statment is true or not
  
+  # W1D3
+  
+  ## Tuple
+  =A tuple is a built-in data type in Python used to store multiple items in a single variable.
+
+Key properties:
+
+Ordered: The items have a fixed order and do not change position automatically.
+
+Immutable: You cannot change (add, remove, or modify) items after you create the tuple.
+
+Allow duplicates: Tuples can contain the same value multiple times.  ##example ; tuple= ("Banana", "Apple", "Banana", "Apple")
+                                                                     ## oytput : (Banana , Apple , Banana , Apple)
+
+Can hold mixed data types: Numbers, strings, booleans, lists, other tuples — anything.
+ ## to print the first item of the variable: variable_name[0]
+ ## to print the first second and third items in the tuple : variable_name[0:3]
+ ## re-assign the second item to a letter:  not possible in tuples
  
+ ## List
+ A list is a built-in data type used to store multiple items in a single variable.
+Think of it like a container or box that can hold a sequence of items.
+Feature	Description
+Ordered	Items keep their order (first, second, third, etc.)
+Mutable	You can change, add, remove items anytime
+Allow duplicates	Same value can appear more than once
+Mixed data types	A list can hold strings, numbers, booleans, even other lists
+### #get the items at positions 2 and 4: fruits[1:5:2]
+### #get the items after postion 3 :mylist[4:]
+
+ ## Appending : .append()
+ Appending means adding a new item to the end of a list.
+
+It does not replace any item — it just adds something after the last item.
+
+It changes the length of the list by one each time you append.
+
+### variablename. append(namethatyouwanttoadd)
+
+## extending : .extend()
+Extending a list means:
+Adding multiple items (from another list, tuple, or any iterable) to the end of your list — one by one.
+
+So instead of adding a whole list as one element, extend() takes each element and adds it individually.
+
+## sorting : .sort()
+=Sorting means arranging items in a specific order — usually:
+
+Ascending (smallest to largest, A–Z)
+
+or Descending (largest to smallest, Z–A)
+
+Python has two ways to sort lists:
+ sorted() function → returns a new sorted list, original stays unchanged
+ .sort() method → sorts the list in place, changing the original
+ 
+ ## Pop : .pop()
+ =pop() is a list method used to:
+
+Remove an item from a list
+Return the removed item (so you can use it if you want)
+
+
+
+
+
+
+
  # W2D1
  ### While loop
  ### For loop
