@@ -198,4 +198,62 @@ class personinf0():
     print(xjdxjd)
     
  ## Class initialization __ init __ and methods¶
+ __init__
  
+ 
+ # W3D1
+ 
+ ## Files
+ 
+ ## Os packages : import OS
+ = This packages helps to navigate differeny files and folder within the operating control. 
+ ## #get your current working directory
+path = os.getcwd()
+print(path)
+ ## File handling
+ = Key function while to open the file in python is open().
+ ### open() function takes two parameters : filename and mode.
+ There are four different methods (modes) for opening a file:
+
+##### "r" - Read - Default value. Opens a file for reading, error if the file does not exist
+#####  "a" - Append - Opens a file for appending, creates the file if it does not exist
+##### "w" - Write - Opens a file for writing, creates the file if it does not exist
+#####  "x" - Create - Creates the specified file, returns an error if the file exists
+
+you can specify if the file should be handled as binary or text mode
+#####  "t" - Text - Default value. Text mode
+##### "b" - Binary - Binary mode
+
+#### .strip() this removes any leading, and trailing whitespaces
+
+### encoding = "utf8"    [tells Python to use UTF-8 encoding, which handles most text correctly (like special characters).]
+
+## differnce betwwen . readlines() and .read()
+### .readlines() 
+= Reads the entire file, but splits it into a list of lines.  ex: [line1, line2,line3]
+### .read()
+=Reads the entire content of the file as ONE big string.
+ ex: line1
+     line2
+     
+  ## Regular expression (re)
+ =allows you to navigate, and edit things such as strings. There are some key methods that we should know:
+find()
+findall(): returns a list of all the matches of the pattern we specified found in the source
+replace()
+
+
+=
+re.findall("resturant", myString) # to find the word resturand in mystring
+#find all of the digit ONLY 
+re.findall("\d+", myString)
+#find all of the WORDS ONLY 
+re.findall("\w+", myString)
+ to find word before and after : "\w+ restaurant \w+"
+## search
+#find if play is in this text
+
+re.search("play",story)
+
+## Metacharacters¶
+= It is witha special meaning
