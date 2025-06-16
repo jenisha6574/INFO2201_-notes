@@ -104,16 +104,39 @@ Remove an item from a list
 Return the removed item (so you can use it if you want)
 
 
+## Disctonary : variable name = {
+                                        "Key" : "Value"
+                                        }
 
-
-
+### to get the key = variablename.key()
 
 
  # W2D1
  ### While loop
+ = A while loop repeats a block of code over and over again as long as a condition is True.
+It checks the condition before each repetition.
+ ### counter
+ =A counter is just a variable that keeps track of how many times something happens.
+You usually start it at 0 or 1, and then add 1 each time you repeat something
  ### For loop
- 
+ =A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+#### Iterable
  An iterable is something you can go through one item at a time, usually in a loop.
+ 
+ #### range()
+ =The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number. The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6).
+ 
+ #### enumerate() : enumerate(fruits)
+ =t lets you loop through a list (or any iterable) and get both:
+
+The index (position in the list)
+
+The item (the value)
+
+It’s like adding a counter automatically when looping!
+
+
  
  # W2D2
  
@@ -159,6 +182,9 @@ print(var1)
 //output:
 Word is cool
 Word
+
+## Arbitrary Arguments, *args
+This way the function will receive a tuple of arguments, and can access the items accordingly:
 
 ## W2D3
 
