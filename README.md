@@ -223,7 +223,7 @@ print(path)
 you can specify if the file should be handled as binary or text mode
 #####  "t" - Text - Default value. Text mode
 ##### "b" - Binary - Binary mode
-
+= with open("data/filename",'r') as f:
 #### .strip() this removes any leading, and trailing whitespaces
 
 ### encoding = "utf8"    [tells Python to use UTF-8 encoding, which handles most text correctly (like special characters).]
@@ -257,3 +257,28 @@ re.search("play",story)
 
 ## Metacharacters¶
 = It is witha special meaning
+
+
+# W3D2
+## CSV Files : comma seprated value
+
+
+    =It is a simple file format used to store tabular data (like a spreadsheet or database).
+=Each line in a CSV file represents a row of data, and each value in that row is separated by a comma.
+
+   ## file handel : csv.reader(f, delimiter= '"')
+   
+   
+   ## JSON files : Java Script object notation
+   
+   = bunch of dictonary
+   
+   ex:
+   dict = {
+    'key1':
+        'value1',
+    'key2':
+        'value2',
+    'key3':
+        'value3'
+}
