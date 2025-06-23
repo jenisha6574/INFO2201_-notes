@@ -282,3 +282,13 @@ re.search("play",story)
     'key3':
         'value3'
 }
+
+
+# w3D3
+
+shows_year = list(set(shows_year))
+this code removes the duplicate and prints the otupt in a list without the duplicate number
+ex: [2015, 2015, 2014, 2013, 2014] to[2013, 2014, 2015}
+
+shows_year.sort(reverse=True)
+this code sort from recent to oldest or greatest to least
