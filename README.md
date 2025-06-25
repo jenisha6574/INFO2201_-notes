@@ -292,3 +292,73 @@ ex: [2015, 2015, 2014, 2013, 2014] to[2013, 2014, 2015}
 
 shows_year.sort(reverse=True)
 this code sort from recent to oldest or greatest to least
+
+# W4D1   Numpy
+numpy
+import numpy as np
+np.
+## array
+= a list
+### coverting list to an array
+arr1 = np.array(data1)
+## checking the diameter of array
+arr2.ndim
+### checking shape
+arr1.shape
+## type
+arr1.dtype
+ ## A Multidimensional Array
+ #make a 2D array
+ arr2d = np.array([[1, 2, 3],[4,5,6],[7,8,9]])
+ #make a 3D array
+arr3d = np.array([[[1,2,3],[4,5,6],[7,8,9],[10,11,12]]])
+
+## Transpose
+convert the row into colum and colum into row
+#find the transpose of the matrix
+arr5.T
+### to convert the list into matrix size
+arr5_reshaped = arr5.reshape((3,5))
+arr5_reshaped.T
+
+
+# W4D2 APIs
+
+### web scarping 
+=comman way to take/collect data or stuff from internet/website.
+### robots.txt  : use this file to see what parts of the site can legally be scraped.
+= This file tells scrapers what they are allowed or not allowed to access. 
+For example, CNN’s file shows:
+
+What parts of the site can be scraped,
+
+Which tools or "robots" are allowed,
+
+Which folders (like ads or polls) are off-limits.
+
+## API
+= An API is a way for two computers or programs to talk to each other.
+You (the user) use a program (called the client) to ask another computer (called the server) for information.
+The server is where the information is stored, and it sends back a response to your request.
+###  documentation
+= This tells you how the API works and where to find the data (these places are called endpoints).
+
+### endpoint 
+= it is like a specific address on the internet where a certain piece of information is kept.
+
+## import request
+This is library that makes a HTTP request and gets backend information from a website, such as RSS feed.
+
+pokemonName = 'charmander'
+pokemonSearch = requests.get("https://pokeapi.co/api/v2/pokemon/"+pokemonName).json()
+
+## Exercise 
+#this is a key
+aKey = "815f527f75d594aa272fc6c9205136b2"
+
+#the api root information is found here - https://www.last.fm/api/intro
+rootURL = "http://ws.audioscrobbler.com/2.0/"
+
+#write a querey
+artistSearchQuery = requests.get(rootURL+"?method=artist.search&artist=eminem&api_key="+
+                          aKey+"&format=json").json()
