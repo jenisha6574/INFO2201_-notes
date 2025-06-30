@@ -1,6 +1,7 @@
 # INFO2201_-notes
 All the class notes from summer 
 
+### to install package : pip install 
 
 # W1d3
 character = chr    ex: chr = "J"
@@ -362,3 +363,21 @@ rootURL = "http://ws.audioscrobbler.com/2.0/"
 #write a querey
 artistSearchQuery = requests.get(rootURL+"?method=artist.search&artist=eminem&api_key="+
                           aKey+"&format=json").json()
+                          
+                          
+  # W4D3
+  
+  ## web scraper
+  sometimes webistes doesn't conatain a API, so we can create something called a web scraper instaed to get the data.
+  In web scarper, we  skip the client section(your coputer)and talk directly to the Server(t)he computer that holds the website using code to get data from the web page.
+  
+  =To build a Web Scraper, you need a few tools. One of the most important is a Python library called:
+  ## request : import request
+  =This tool lets your program send a message to the website (called an HTTP request) and get back the HTML content of a page.
+  They also include a link to the official documentation so you can learn more about how requests works.
+  
+  ## XML : Extensible Markup Language
+  =It’s a way to store and organize data so that both humans and computers can read it easily.
+
+## Beautiful soup 
+= It is a Python library for pulling data out of HTML and XML files.
